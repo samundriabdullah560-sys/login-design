@@ -12,7 +12,29 @@ export default function index() {
   return (
     <View>
       <View style={styles.container}></View>
-      
+      <ImageBackground
+        source={require("../assets/images/background.png")}
+        style={{
+          width: "100%",
+          height: "100%",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <View style={styles.container2}>
+          <Image
+            source={require("../assets/images/Vector.png")}
+            style={{ marginTop: 30 }}
+          />
+          <Text style={styles.heading}>Login</Text>
+          <Text style={styles.heading2}>
+            Enter your email and password to log in
+          </Text>
+          <View style={styles.container3}>
+            <TextInput style={styles.input} placeholder="Enter email" />
+            <View style={styles.container3}>
+              <TextInput style={styles.input} placeholder="Enter password" />
+            </View>
             <View style={styles.container4}>
               <View
                 style={{
