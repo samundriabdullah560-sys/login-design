@@ -11,6 +11,7 @@ import {
 export default function index() {
   return (
     <View>
+      <View style={styles.container}></View>
       <ImageBackground
         source={require("../assets/images/background.png")}
         style={{
